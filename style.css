@@ -2,13 +2,39 @@
 }
 
 #clock img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 #hour {
+
 }
+
+#hour img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
 
 #minute {
+
 }
 
+#minute img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+
 #second {
+
+}
+
+#second img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
