@@ -61,5 +61,5 @@ function clock () {
 }
 document.addEventListener('DOMContentLoaded', function () {
   var testClock = clock()
-  setInterval(testClock.startClock(), 1000)
+  setInterval(testClock.startClock, 1000)
 })
