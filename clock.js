@@ -1,6 +1,7 @@
-document.addEventListener('DOMContentLoaded', function () {
+
 // change the order of the clock hands
 // get all clock element
+function clock () {
   var secHandEle = document.getElementById('second')
   var minHandEle = document.getElementById('minute')
   var hourHandEle = document.getElementById('hour')
@@ -56,5 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
     moveClock(now.getSeconds(), now.getMinutes(), now.getHours())
   }
 
-  setInterval(startClock, 1000)
+  return {startClock: startClock}
+}
+document.addEventListener('DOMContentLoaded', function () {
+  var testClock = clock()
+  setInterval(testClock.startClock(), 1000)
 })
